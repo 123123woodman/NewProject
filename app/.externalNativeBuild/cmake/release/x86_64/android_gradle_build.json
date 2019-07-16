@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "E:/ijkplayer/NewProject/app/src/main/cpp/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"D:\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\ijkplayer\\NewProject\\app\\.externalNativeBuild\\cmake\\release\\x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "D:\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build E:\\ijkplayer\\NewProject\\app\\.externalNativeBuild\\cmake\\release\\x86_64 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=D:/android-sdk/android-ndk-r16b/toolchains/x86_64-4.9/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/android-ndk-r16b/sysroot  -Dnative_lib_EXPORTS -isystem D:\\android-sdk\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem D:\\android-sdk\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86_64\\include -isystem D:\\android-sdk\\android-ndk-r16b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -isystem D:/android-sdk/android-ndk-r16b/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "E:/ijkplayer/NewProject/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "E:/ijkplayer/NewProject/app/.externalNativeBuild/cmake/release/x86_64"
+				}
+			],
+			"output" : "E:/ijkplayer/NewProject/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
+			"toolchain" : "960719645"
+		}
+	},
+	"toolchains" : 
+	{
+		"960719645" : 
+		{
+			"cCompilerExecutable" : "D:/android-sdk/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/android-sdk/android-ndk-r16b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

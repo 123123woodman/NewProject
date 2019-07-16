@@ -1,0 +1,14 @@
+Executable : D:\android-sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HE:\ijkplayer\NewProject\app\src\main\cpp
+-BE:\ijkplayer\NewProject\app\.externalNativeBuild\cmake\release\armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-17
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=E:\ijkplayer\NewProject\app\build\intermediates\cmake\release\obj\armeabi-v7a
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=D:\android-sdk\android-ndk-r16b
+-DCMAKE_TOOLCHAIN_FILE=D:\android-sdk\android-ndk-r16b\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=D:\android-sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

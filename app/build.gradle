@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'org.greenrobot.greendao'
+
+android {
+//    compileSdkVersion 25
+//    buildToolsVersion "25.0.3"
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "wangjie.com.newproject"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags ""
+//
+//                abiFilters 'armeabi-v7a'
+//            }
+//        }
+
+        //配置需要的cpu平台
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+
+        flavorDimensions "1"
+
+    }
+
+
+    buildTypes {
+
+        debug {
+//            // 如果没有提供混淆规则文件，则设置默认的混淆规则文件（SDK/tools/proguard/proguard-android.txt）
+//            pseudoLocalesEnabled true
+//            // 显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            //加载默认混淆配置文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            // 如果没有提供混淆规则文件，则设置默认的混淆规则文件（SDK/tools/proguard/proguard-android.txt）
+            pseudoLocalesEnabled true
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            jniLibs.srcDirs 'src/main/libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':library')
+
+    implementation project(':ijkplayer-java')
+    if (!rootProject.ext.isVideoApplication) {
+        implementation project(':video')
+    }
+    if (!rootProject.ext.isXiaLianShouApplication) {
+        implementation project(':loginfo')
+    }
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+    debugImplementation rootProject.ext.dependencies["leakcanary-android"]
+    releaseImplementation rootProject.ext.dependencies["leakcanary-android-no-op"]
+    // 可选，如果你使用支持库的fragments的话
+    debugImplementation rootProject.ext.dependencies["leakcanary-support-fragment"]
+
+
+//    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+//    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+
+}

@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven{
+            url "https://plugins.gradle.org/m2/"
+        }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+        //classpath "com.gradle:build-scan-plugin:1.15.1"
+        //classpath 'org.greenrobot:greendao-gradle-plugi                                               n:3.2.0'
+//        classpath 'com.android.tools.build:gradle-experimental:0.7.0-alpha1'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+//plugins {
+//    id "com.gradle.build-scan" version "1.15.1"
+//}
+
+//apply plugin: "com.gradle.build-scan"
+
+allprojects {
+
+    repositories {
+        jcenter()
+        maven { url 'https://plugins.gradle.org/m2' }
+        google()
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+

@@ -1,0 +1,27 @@
+# ninja log v5
+0	121	0	CMakeFiles/native-lib.dir/nativemethod.c.o	5d574d02c3df050b
+121	279	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	79702f34bbcbfcd3
+0	260	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+261	1244	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	354	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+354	1145	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+2	388	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+388	1213	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	215	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+215	426	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	1319	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+1319	2703	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+2	279	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+279	1759	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	277	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+277	501	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	288	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+288	1235	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	537	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+538	2067	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+3	468	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+468	991	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+4	1175	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+1175	2126	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39
+28	443	0	CMakeFiles/native-lib.dir/native-lib.cpp.o	eb24a315f0632479
+443	1203	0	E:/ijkplayer/NewProject/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	33755746ba7d6a39

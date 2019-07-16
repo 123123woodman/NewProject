@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+
+    api rootProject.ext.dependencies["appcompat-v7"]
+    api rootProject.ext.dependencies["junit"]
+    api rootProject.ext.dependencies["preference"]
+    api rootProject.ext.dependencies["support-annotations"]
+    api rootProject.ext.dependencies["recyclerview"]
+    api rootProject.ext.dependencies["annotation"]
+    api rootProject.ext.dependencies["constraint-layout"]
+
+    api rootProject.ext.dependencies["rxjava2"]
+    api rootProject.ext.dependencies["rxandroid2"]
+    api rootProject.ext.dependencies["rxlifecycle"]
+    api rootProject.ext.dependencies["rxlifecycle-android"]
+    api rootProject.ext.dependencies["rxlifecycle-components"]
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofit2-rxjava2-adapter"]
+    api rootProject.ext.dependencies["converter-gson"]
+    api rootProject.ext.dependencies["logging-interceptor"]
+
+    api rootProject.ext.dependencies["butterknife"]
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    api rootProject.ext.dependencies["dagger"]
+    api rootProject.ext.dependencies["fastjson"]
+    api rootProject.ext.dependencies["otto"]
+    api rootProject.ext.dependencies["reactive-streams"]
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+
+    api rootProject.ext.dependencies["greendao"]
+
+    api rootProject.ext.dependencies["fresco"]
+
+//    api rootProject.ext.dependencies["leakcanary-android"]
+//    api rootProject.ext.dependencies["leakcanary-android-no-op"]
+//    // 可选，如果你使用支持库的fragments的话
+//    api rootProject.ext.dependencies["leakcanary-support-fragment"]
+//
+    api rootProject.ext.dependencies["arouter-api"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+//    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

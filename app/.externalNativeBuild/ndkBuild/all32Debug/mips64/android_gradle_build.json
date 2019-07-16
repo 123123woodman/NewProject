@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "E:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk",
+    "E:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips64 NDK_ALL_ABIS\u003dmips64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/play/NewProject/app/build/intermediates/ndkBuild/all32/debug/obj NDK_LIBS_OUT\u003dE:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\all32\\debug\\lib clean"
+  ],
+  "libraries": {
+    "NativeSo-all32Debug-mips64": {
+      "buildCommand": "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips64 NDK_ALL_ABIS\u003dmips64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/play/NewProject/app/build/intermediates/ndkBuild/all32/debug/obj NDK_LIBS_OUT\u003dE:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\all32\\debug\\lib E:/play/NewProject/app/build/intermediates/ndkBuild/all32/debug/obj/local/mips64/libNativeSo.so",
+      "toolchain": "toolchain-mips64",
+      "abi": "mips64",
+      "artifactName": "NativeSo",
+      "files": [
+        {
+          "src": "E:\\play\\NewProject\\app\\src\\main\\jni\\nativemethod.c",
+          "flags": "\"-gcc-toolchain\" \"D:/android-sdk/android-ndk-r16b/build//../toolchains/mips64el-linux-android-4.9/prebuilt/windows-x86_64\" \"-target\" \"mips64el-none-linux-android\" \"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fmessage-length\u003d0\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-fintegrated-as\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-IE:\\play\\NewProject\\app\\src\\main\\jni\" \"-IE:\\play\\NewProject\\app\\src\\debug\\jni\" \"-IE:/play/NewProject/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"D:/android-sdk/android-ndk-r16b/build//../sysroot\" \"-isystem\" \"D:/android-sdk/android-ndk-r16b/build//../sysroot/usr/include/mips64el-linux-android\""
+        }
+      ],
+      "output": "E:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\all32\\debug\\obj\\local\\mips64\\libNativeSo.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-mips64": {
+      "cCompilerExecutable": "D:\\android-sdk\\android-ndk-r16b\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

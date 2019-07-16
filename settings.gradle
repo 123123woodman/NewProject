@@ -1,0 +1,1 @@
+include ':app', ':daogenerator', ':ijkplayer-java', ':library', ':video', ':loginfo'

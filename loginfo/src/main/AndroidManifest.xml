@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wangjie.com.loginfo">
+
+    <application>
+        <activity android:name=".ui.LogInfoActivity"></activity>
+    </application>
+</manifest>

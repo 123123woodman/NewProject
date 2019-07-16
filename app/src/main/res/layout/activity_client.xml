@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/connectService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接服务"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sendMesseager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送信报"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/connectService"
+        android:layout_alignLeft="@+id/connectService"
+        android:layout_alignStart="@+id/connectService" />
+
+    <Button
+        android:id="@+id/breakConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开连接"/>
+
+</RelativeLayout>

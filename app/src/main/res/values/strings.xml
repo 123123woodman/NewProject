@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NewProject</string>
+    <string name="toast_error_network">网络异常</string>
+    <string name="toast_error_server">服务器异常</string>
+    <string name="toast_error_unknown">未知异常</string>
+
+    <!--主页-->
+    <string name="main_opencamera">开启摄像头</string>
+    <string name="main_gc">手动触发gc</string>
+    <string name="main_jump_recycler">跳转Recycler</string>
+    <string name="main_netadb">网络adb</string>
+    <string name="main_senddata">发送数据包</string>
+    <string name="main_ishavebitmap">检测缓存中是否有资源</string>
+    <string name="main_binder">启动ClientActivity</string>
+    <string name="main_readbmp">读取bmp头</string>
+    <string name="main_sendIris">发送虹膜</string>
+    <string name="main_video">视频播放</string>
+    <string name="main_flowable">异步背压</string>
+    <string name="main_https">HTTPS</string>
+    <string name="main_xunfei">讯飞</string>
+    <string name="main_cancel_account">注销账号</string>
+    <string name="main_exit_account">退出登录</string>
+</resources>

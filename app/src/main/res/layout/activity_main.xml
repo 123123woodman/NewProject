@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wangjie.com.newproject.activity.MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/main_fresco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="-13dp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_opencamera"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/main_gc"
+        android:layout_width="wrap_content"
+        android:text="@string/main_gc"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_button"
+        android:layout_alignRight="@+id/main_button"
+        android:layout_alignEnd="@+id/main_button"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:id="@+id/main_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_jump_recycler"
+        android:layout_marginBottom="64dp"
+        android:layout_above="@+id/main_button"
+        android:layout_centerHorizontal="true" />
+    
+    <Button
+        android:id="@+id/main_clean_fresco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_netadb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    
+    <Button
+        android:id="@+id/main_change_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_senddata"
+        android:layout_below="@+id/main_ishavebitmap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/main_ishavebitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_ishavebitmap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="10dp" />
+    
+    <Button
+        android:id="@+id/main_binder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_binder"
+        android:layout_above="@+id/main_recycler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+    
+    <Button
+        android:id="@+id/readBmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_readbmp"
+        android:layout_below="@+id/main_binder"
+        android:layout_alignRight="@+id/main_clean_fresco"
+        android:layout_alignEnd="@+id/main_clean_fresco"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/sendIris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_sendIris"
+        android:layout_alignBottom="@+id/readBmp"
+        android:layout_alignRight="@+id/main_text"
+        android:layout_alignEnd="@+id/main_text" />
+    
+    <Button
+        android:id="@+id/videoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_video"
+        android:layout_below="@+id/main_recycler"
+        android:layout_alignLeft="@+id/main_text"
+        android:layout_alignStart="@+id/main_text" />
+
+    <Button
+        android:id="@+id/main_flowable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_flowable"
+        android:layout_below="@+id/videoPlayer"
+        android:layout_toLeftOf="@+id/main_recycler"
+        android:layout_toStartOf="@+id/main_recycler"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/main_https"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_https"
+        android:layout_below="@+id/main_recycler"
+        android:layout_toRightOf="@+id/main_binder"
+        android:layout_toEndOf="@+id/main_binder" />
+
+    <EditText
+        android:id="@+id/main_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_account_group"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:hint="@string/main_xunfei"
+        android:background="@null"/>
+    
+    <LinearLayout
+        android:id="@+id/main_account_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/main_gc">
+        <Button
+            android:id="@+id/main_cancel_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ButtonBar"
+            android:text="@string/main_cancel_account"/>
+        <Button
+            android:id="@+id/main_exit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.ButtonBar"
+            android:text="@string/main_exit_account"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

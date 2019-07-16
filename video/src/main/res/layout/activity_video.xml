@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wangjie.com.video.ui.VideoActivity"
+    android:orientation="vertical">
+    
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></LinearLayout>-->
+
+    <Button
+        android:id="@+id/voleumadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="声音加"/>
+
+    <Button
+        android:id="@+id/voleumminus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="声音减"/>
+    
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停"/>
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放"/>
+
+    <Button
+        android:id="@+id/video_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NATIVE"/>
+
+    <wangjie.com.video.MyMediaPlayerStandard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </wangjie.com.video.MyMediaPlayerStandard>
+
+</LinearLayout>

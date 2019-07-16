@@ -1,0 +1,17 @@
+{
+  "buildFiles": [
+    "E:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Android.mk",
+    "E:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/ijkplayer/NewProject/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dE:\\ijkplayer\\NewProject\\app\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "NativeSo-debug-x86_64": {
+      "artifactName": "NativeSo",
+      "buildCommand": "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ijkplayer\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dE:/ijkplayer/NewProject/app/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dE:\\ijkplayer\\NewProject\\app\\build\\intermediates\\ndkBuild\\debug\\lib E:/ijkplayer/NewProject/app/build/intermediates/ndkBuild/debug/obj/local/x86_64/libNativeSo.so",
+      "abi": "x86_64",
+      "output": "E:\\ijkplayer\\NewProject\\app\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\x86_64\\libNativeSo.so"
+    }
+  }
+}

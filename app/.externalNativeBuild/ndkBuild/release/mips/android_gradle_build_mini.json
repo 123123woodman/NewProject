@@ -1,0 +1,17 @@
+{
+  "buildFiles": [
+    "E:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk",
+    "E:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d0 APP_PLATFORM\u003dandroid-15 NDK_OUT\u003dE:/play/NewProject/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "NativeSo-release-mips": {
+      "artifactName": "NativeSo",
+      "buildCommand": "D:\\android-sdk\\android-ndk-r16b\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\play\\NewProject\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d0 APP_PLATFORM\u003dandroid-15 NDK_OUT\u003dE:/play/NewProject/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\release\\lib E:/play/NewProject/app/build/intermediates/ndkBuild/release/obj/local/mips/libNativeSo.so",
+      "abi": "mips",
+      "output": "E:\\play\\NewProject\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\mips\\libNativeSo.so"
+    }
+  }
+}

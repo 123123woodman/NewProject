@@ -1,0 +1,2 @@
+[armeabi-v7a] Compile thumb  : NativeSo <= nativemethod.c
+[armeabi-v7a] SharedLibrary  : libNativeSo.so

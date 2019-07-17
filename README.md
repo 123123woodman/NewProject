@@ -4,7 +4,7 @@
         (一)app:仅用于主页展示，模块衔接等功能
         (二)ijkplayer-java: ijkplayer工具包内含ijkplayer相关api
         (三)library: 工具库模块，提供共用api，base类，网络、数据库、图片处理等都继承与此库
-        (四)loginfo: 就是一个RecyclerView构建的数据显示列表没啥用
+        (四)loginfo: 就是一个RecyclerView构建的数据显示列表想用自己改
         (五)video:视频播放模块
 
     架构设计

@@ -27,7 +27,7 @@ import wangjie.com.loginfo.module.RecyclerViewModule;
 import wangjie.com.loginfo.presenter.LogInfoPresenter;
 
 /**
- *
+ *2019年7月19号更新测试
  */
 
 @Route(path = ArouterConstant.ACTIVITY_LOGINFOACTIVITY)
@@ -65,6 +65,7 @@ public class LogInfoActivity extends BaseActivity {
     GridLayoutManager gridLayoutManager;
 
     private int i = 0;
+
 
     @Override
     public void initParameter() {

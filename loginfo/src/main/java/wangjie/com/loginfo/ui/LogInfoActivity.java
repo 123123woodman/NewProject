@@ -27,7 +27,7 @@ import wangjie.com.loginfo.module.RecyclerViewModule;
 import wangjie.com.loginfo.presenter.LogInfoPresenter;
 
 /**
- *2019年7月19号10:36提交到dev分支并提交到远程仓
+ *2019年7月19号10:53分再次提交到dev分支并提交到远程仓
  */
 
 @Route(path = ArouterConstant.ACTIVITY_LOGINFOACTIVITY)

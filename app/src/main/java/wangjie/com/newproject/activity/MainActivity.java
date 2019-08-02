@@ -63,7 +63,7 @@ import wangjie.com.newproject.test.TcpTest;
 @Route(path = ArouterConstant.ACTIVITY_MAINACTIVITY)
 public class MainActivity extends BaseActivity {
 
-    private String TAG = "KKKK";
+    private String TAG = "wangjie";
     private Subscription mSubscription;
 
     @BindView(R.id.main_button)

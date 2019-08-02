@@ -59,6 +59,9 @@ import wangjie.com.newproject.presnter.MainPresenter;
 import wangjie.com.newproject.test.ReadBmp;
 import wangjie.com.newproject.test.TcpTest;
 
+/**
+ * 之前测东西用很随意，命名不规范
+ */
 @ContextView(R.layout.activity_main)
 @Route(path = ArouterConstant.ACTIVITY_MAINACTIVITY)
 public class MainActivity extends BaseActivity {

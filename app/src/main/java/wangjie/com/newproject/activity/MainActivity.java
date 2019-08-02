@@ -19,10 +19,7 @@ import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
 
 import javax.inject.Inject;
 
@@ -201,24 +198,24 @@ public class MainActivity extends BaseActivity {
 //                imagePipeline.clearDiskCaches();
 //                imagePipeline.clearCaches();
 
-                try {
-                    //权限设置
-                    Process p = Runtime.getRuntime().exec("su");
-                    //获取输出流
-                    OutputStream outputStream = p.getOutputStream();
-                    DataOutputStream dataOutputStream=new DataOutputStream(outputStream);
-                    String cmd = "kill-server\n" + "setprop service.adb.tcp.port 5555\n" +
-                                        "stop adbd\n" + "start adbd\n";
-                    //将命令写入
-                    dataOutputStream.writeBytes(cmd);
-                    //提交命令
-                    dataOutputStream.flush();
-                    //关闭流操作
-                    dataOutputStream.close();
-                    outputStream.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    //权限设置
+//                    Process p = Runtime.getRuntime().exec("su");
+//                    //获取输出流
+//                    OutputStream outputStream = p.getOutputStream();
+//                    DataOutputStream dataOutputStream=new DataOutputStream(outputStream);
+//                    String cmd = "kill-server\n" + "setprop service.adb.tcp.port 5555\n" +
+//                                        "stop adbd\n" + "start adbd\n";
+//                    //将命令写入
+//                    dataOutputStream.writeBytes(cmd);
+//                    //提交命令
+//                    dataOutputStream.flush();
+//                    //关闭流操作
+//                    dataOutputStream.close();
+//                    outputStream.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
                 break;
             case R.id.main_change_color:
                 new Thread(new Runnable() {
@@ -323,25 +320,20 @@ public class MainActivity extends BaseActivity {
                         .subscribe(new Observer<HttpsData>() {
                             @Override
                             public void onSubscribe(Disposable d) {
-                                Log.i("FFFF", "onSubscribe");
                             }
 
                             @Override
                             public void onNext(HttpsData value) {
-                                Log.i("FFFF", value.toString());
-                                Log.i("FFFF", "onNext");
                             }
 
                             @Override
                             public void onError(Throwable e) {
-                                Log.i("FFFF", "onError");
                                 e.printStackTrace();
                                 ExceptionUtils.handleHttpException(e);
                             }
 
                             @Override
                             public void onComplete() {
-                                Log.i("FFFF", "onComplete");
                             }
                         });
                 break;
@@ -465,21 +457,7 @@ public class MainActivity extends BaseActivity {
         System.loadLibrary("native-lib");
     }
 
-    @Override
-    public void onTrimMemory(int level) {
-        super.onTrimMemory(level);
-//        MemoryTrimmableRegistry memoryTrimmableRegistry = new MemoryTrimmableRegistry() {
-//            @Override
-//            public void registerMemoryTrimmable(MemoryTrimmable trimmable) {
-//                //trimmable.trim();
-//            }
-//
-//            @Override
-//            public void unregisterMemoryTrimmable(MemoryTrimmable trimmable) {
-//
-//            }
-//        };
-    }
+
 
     @Override
     public void onBackPressed() {

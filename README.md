@@ -11,7 +11,7 @@
     设计模式 MVP + dagger2
     页面跳转分组化管理采用了 Arouter
     view注入框架 ButterKnife
-    网络采用了RxJava + OkHttp3 + retrofit 检测控制其生命周期采用了 rxlifecycle
+    网络采用了RxJava + OkHttp3 + retrofit
     图片处理采用了 Fresco
     ...
 

@@ -85,10 +85,9 @@ public class FrameAnimation extends SurfaceView implements SurfaceHolder.Callbac
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-        // 当surfaceView销毁时, 停止线程的运行. 避免surfaceView销毁了线程还在运行而报错.
-//        mIsThreadRunning = false;
-//        ThreadSleepUtils.threadSleep(mGapTime);
-//        mIsDestroy = true;
+        mIsThreadRunning = false;
+        ThreadSleepUtils.threadSleep(mGapTime);
+        mIsDestroy = true;
     }
 
     /**
@@ -180,7 +179,6 @@ public class FrameAnimation extends SurfaceView implements SurfaceHolder.Callbac
         if (!mIsDestroy) {
             mCurrentIndext = 0;
             mIsThreadRunning = true;
-            Log.i("TTTT", "start");
             new Thread(this).start();
         } else {
             // 如果SurfaceHolder已经销毁抛出该异常

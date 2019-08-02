@@ -40,6 +40,4 @@ public interface URLService {
     @GET(" ")
     Observable<GitHttpsData> getGit();
 
-//    @GET("dingyingying521/article/ls/78468620")
-//    Observable<YiZhaoYun> getMsgResponse ();
 }

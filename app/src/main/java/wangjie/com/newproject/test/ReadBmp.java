@@ -1,7 +1,6 @@
 package wangjie.com.newproject.test;
 
 import android.os.Environment;
-import android.util.Log;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -31,7 +30,6 @@ public class ReadBmp {
             while (readedlen < is.available()) {
                 readedlen += is.read(bytes);
             }
-            //Log.i("AAAA", new DebugInfo() + Base64.encodeToString(bytes, Base64.DEFAULT));
             return cutBmp(bytes);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -97,10 +95,6 @@ public class ReadBmp {
     public static byte[] getLastBytes() {
 
         byte[] bytes = readBmp();
-//        byte[] by = new byte[bytes.length / 2];
-//        for (int i = 0; i < by.length; i++) {
-//            by[i] = bytes[i * 2];
-//        }
 
         return bytes;
     }
@@ -136,7 +130,6 @@ public class ReadBmp {
     private static  byte[] cutBmp(byte[] bytes) {
         byte[] by = new byte[bytes.length - 58];
         System.arraycopy(bytes, 58, by, 0, by.length);
-        Log.i("AAAA", "--------------->" + by.length);
         return by;
     }
 

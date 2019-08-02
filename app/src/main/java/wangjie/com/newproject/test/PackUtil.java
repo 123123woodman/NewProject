@@ -77,8 +77,8 @@ public class PackUtil
             System.arraycopy(bodaybts, 10219*i, tempbts, 0, length);
             
             String headStr = fomartHead(11, length+21, cmd, flow, error);
-            packList.add(headStr.getBytes());//先有包头
-            packList.add(tempbts);//后有包体，不能颠倒
+            packList.add(headStr.getBytes());
+            packList.add(tempbts);
         }
         return packList;
     }

@@ -1,7 +1,5 @@
 package wangjie.com.newproject.presnter;
 
-import android.util.Log;
-
 import javax.inject.Inject;
 
 /**
@@ -15,7 +13,7 @@ public class MainPresenter {
     }
 
     public void init() {
-        Log.i("QQQQ", "通了");
+
     }
 
 }

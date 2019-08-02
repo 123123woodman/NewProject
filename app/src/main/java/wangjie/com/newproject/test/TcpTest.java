@@ -2,7 +2,6 @@ package wangjie.com.newproject.test;
 
 import android.graphics.Bitmap;
 import android.os.Environment;
-import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -24,8 +23,6 @@ import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import wangjie.com.library.utils.DebugInfo;
 
 /**
  * Created by Administrator on 2018/4/28.
@@ -121,7 +118,6 @@ public class TcpTest {
                     {
                         int w = is.read(head,readedlen,21-readedlen);
                         readedlen += w;
-                        Log.i("OOOO", "w------------->" + w);
                     }
                     JSONObject joh = PackUtil.analyHead(head);
 
@@ -134,10 +130,8 @@ public class TcpTest {
                     {
                         int q = is.read(body, readedlen, length-21-readedlen);//读出socket的文件包体
                         readedlen += q;
-                        Log.i("OOOO", new DebugInfo() + "" + readedlen + "|" + length + "|" + q);
                         Thread.sleep(1000);
                     }
-                    Log.i("OOOO", new DebugInfo() + "----->" + readedlen);
                     System.arraycopy(body, 0, mdbts, copyindex, body.length);
                     copyindex += body.length;
                     //fos.write(body);//写入文件
@@ -181,11 +175,6 @@ public class TcpTest {
             throw e;
         } finally {
             this.freeIO(is, os);
-            Log.i("OOOO", new DebugInfo() + "" + socket.isBound());
-            Log.i("OOOO", new DebugInfo() + "" + socket.isClosed());
-            Log.i("OOOO", new DebugInfo() + "" + socket.isConnected());
-            Log.i("OOOO", new DebugInfo() + "" + socket.isInputShutdown());
-            Log.i("OOOO", new DebugInfo() + "" + socket.isOutputShutdown());
         }
     }
 
@@ -211,7 +200,6 @@ public class TcpTest {
 
         } catch (IOException e) {
 
-            //logger.warn("操作设备释放InputStream错误",e);
 
         }
     }
@@ -346,7 +334,6 @@ public class TcpTest {
         Bitmap bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Buffer buffer = ByteBuffer.wrap(data);
         //bmp.copyPixelsFromBuffer(ByteBuffer.wrap(data));
-        Log.i("GGGG", new DebugInfo() + "" + bmp.getByteCount());
 //        OutputStream os = null;
 //        try {
 //            os = new FileOutputStream(localPath);

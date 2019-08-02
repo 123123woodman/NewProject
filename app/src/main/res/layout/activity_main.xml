@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:text="@string/main_opencamera"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/main_gc"
@@ -33,7 +34,8 @@
         android:layout_below="@+id/main_button"
         android:layout_alignRight="@+id/main_button"
         android:layout_alignEnd="@+id/main_button"
-        android:layout_marginTop="51dp" />
+        android:layout_marginTop="51dp"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/main_recycler"
@@ -42,7 +44,8 @@
         android:text="@string/main_jump_recycler"
         android:layout_marginBottom="64dp"
         android:layout_above="@+id/main_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/main_clean_fresco"
@@ -51,7 +54,8 @@
         android:text="@string/main_netadb"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/main_change_color"
@@ -60,7 +64,8 @@
         android:text="@string/main_senddata"
         android:layout_below="@+id/main_ishavebitmap"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/main_ishavebitmap"
@@ -72,7 +77,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="11dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/main_binder"
@@ -81,7 +87,8 @@
         android:text="@string/main_binder"
         android:layout_above="@+id/main_recycler"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp" />
+        android:layout_marginBottom="12dp"
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/readBmp"
@@ -91,7 +98,8 @@
         android:layout_below="@+id/main_binder"
         android:layout_alignRight="@+id/main_clean_fresco"
         android:layout_alignEnd="@+id/main_clean_fresco"
-        android:layout_marginTop="23dp" />
+        android:layout_marginTop="23dp"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/sendIris"
@@ -100,7 +108,8 @@
         android:text="@string/main_sendIris"
         android:layout_alignBottom="@+id/readBmp"
         android:layout_alignRight="@+id/main_text"
-        android:layout_alignEnd="@+id/main_text" />
+        android:layout_alignEnd="@+id/main_text"
+        android:visibility="visible"/>
     
     <Button
         android:id="@+id/videoPlayer"
@@ -109,7 +118,8 @@
         android:text="@string/main_video"
         android:layout_below="@+id/main_recycler"
         android:layout_alignLeft="@+id/main_text"
-        android:layout_alignStart="@+id/main_text" />
+        android:layout_alignStart="@+id/main_text"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/main_flowable"
@@ -119,7 +129,8 @@
         android:layout_below="@+id/videoPlayer"
         android:layout_toLeftOf="@+id/main_recycler"
         android:layout_toStartOf="@+id/main_recycler"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:visibility="visible"/>
 
     <Button
         android:id="@+id/main_https"
@@ -128,7 +139,8 @@
         android:text="@string/main_https"
         android:layout_below="@+id/main_recycler"
         android:layout_toRightOf="@+id/main_binder"
-        android:layout_toEndOf="@+id/main_binder" />
+        android:layout_toEndOf="@+id/main_binder"
+        android:visibility="visible"/>
 
     <EditText
         android:id="@+id/main_text"
@@ -141,14 +153,16 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="38dp"
         android:hint="@string/main_xunfei"
-        android:background="@null"/>
+        android:background="@null"
+        android:visibility="gone"/>
     
     <LinearLayout
         android:id="@+id/main_account_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/main_gc">
+        android:layout_below="@id/main_gc"
+        android:visibility="visible">
         <Button
             android:id="@+id/main_cancel_account"
             android:layout_width="wrap_content"

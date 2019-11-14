@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alivc_common_bg_black">
+    <FrameLayout
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clickable="false"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="false"
+
+            android:scaleType="fitXY"
+            android:focusable="false"
+            android:adjustViewBounds="true"/>
+        
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/alivc_common_margin_88"
+        android:layout_marginRight="@dimen/alivc_common_keyline_15"
+        android:layout_gravity="right|bottom"
+        android:padding="@dimen/alivc_common_padding_10"
+        android:src="@mipmap/alivc_little_icon_share"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/alivc_common_margin_74"
+        android:layout_marginLeft="@dimen/alivc_common_keyline_15"
+        android:layout_gravity="left|bottom"
+        android:visibility="visible">
+        <wangjie.com.qidianhuyu.ali.view.video.VideoInfoView
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</FrameLayout>
